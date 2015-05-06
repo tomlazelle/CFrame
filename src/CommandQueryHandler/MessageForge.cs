@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 namespace CommandQueryHandler
 {
-    public static class MessageFactory
+    public static class MessageForge
     {
-        public static T ToMessage<T>(object model)
+        public static T Create<T>(object model)
         {
             return Mapper.Map<T>(model);
         }

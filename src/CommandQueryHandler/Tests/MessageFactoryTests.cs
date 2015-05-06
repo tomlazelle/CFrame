@@ -46,7 +46,7 @@ namespace CommandQueryHandler.Tests
                 Name = projection.Name
             };
 
-            var message = MessageFactory.ToMessage<TestMessage>(model);
+            var message = MessageForge.Create<TestMessage>(model);
 
             message.ShouldNotBeNull();
             message.Name.ShouldNotBeNull();
